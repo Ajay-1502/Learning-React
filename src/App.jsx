@@ -1,50 +1,17 @@
-import ExpenseItem from './components/ExpenseItem.jsx';
+import Expenses from './components/Expenses';
+
 function App() {
   const expenses = [
-    {
-      id: '1',
-      date: new Date(2025, 1, 15),
-      location: 'Bangalore',
-      title: 'Insurance',
-      price: '₹5000',
-    },
-    {
-      id: '2',
-      date: new Date(2025, 2, 15),
-      location: 'Delhi',
-      title: 'Book',
-      price: '₹20',
-    },
-    {
-      id: '3',
-      date: new Date(2025, 3, 15),
-      location: 'Hyderabad',
-      title: 'Pen',
-      price: '₹5',
-    },
-    {
-      id: '4',
-      date: new Date(2025, 5, 15),
-      location: 'Mumbai',
-      title: 'Laptop',
-      price: '₹50000',
-    },
+    { id: '1', date: new Date(2023, 7, 15), title: 'Insurance', price: 100 },
+    { id: '2', date: new Date(2023, 3, 25), title: 'Book', price: 10 },
+    { id: '3', date: new Date(2023, 10, 11), title: 'Pen', price: 1 },
+    { id: '4', date: new Date(2023, 1, 14), title: 'Laptop', price: 200 },
   ];
 
   return (
     <div>
-      <h1>Let's get started</h1>
-      {expenses.map((expense) => {
-        return (
-          <ExpenseItem
-            key={expense.id}
-            date={expense.date}
-            location={expense.location}
-            title={expense.title}
-            price={expense.price}
-          ></ExpenseItem>
-        );
-      })}
+      <h1>Let's get Started</h1>
+      <Expenses expenditures={expenses}></Expenses>
     </div>
   );
 }
