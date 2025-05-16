@@ -1,4 +1,4 @@
-// Write your code here
+import Card from './Card';
 import './ExpenseDate.css';
 
 function ExpenseDate(props) {
@@ -22,11 +22,11 @@ function ExpenseDate(props) {
   const date = props.date.getDate();
 
   return (
-    <div className="expense-date">
+    <Card className="expense-date">
       <div className="expense-date__month">{month}</div>
       <div className="expense-date__year">{year}</div>
       <div className="expense-date__date">{date}</div>
-    </div>
+    </Card>
   );
 }
 
