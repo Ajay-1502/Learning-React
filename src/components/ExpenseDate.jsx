@@ -1,7 +1,7 @@
 import Card from './Card';
 import './ExpenseDate.css';
 
-function ExpenseDate(props) {
+const ExpenseDate = (props) => {
   const months = [
     'January',
     'February',
@@ -28,6 +28,6 @@ function ExpenseDate(props) {
       <div className="expense-date__date">{date}</div>
     </Card>
   );
-}
+};
 
 export default ExpenseDate;
