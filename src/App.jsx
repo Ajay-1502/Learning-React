@@ -17,7 +17,6 @@ const App = () => {
 
   return (
     <div>
-      <LoginForm />
       <NewExpense newexpense={newExpenseHandler} />
       <Expenses expenditures={expenses}></Expenses>
     </div>

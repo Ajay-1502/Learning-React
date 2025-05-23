@@ -19,7 +19,9 @@ const Expenses = (props) => {
       })
     : expenses;
 
-  let expensesContent = <p>No Expenses Found</p>;
+  let expensesContent = (
+    <h2 style={{ textAlign: 'center', color: 'red' }}>No Expenses Found</h2>
+  );
 
   if (filteredExpenses.length > 0) {
     expensesContent = filteredExpenses.map((expense) => {
