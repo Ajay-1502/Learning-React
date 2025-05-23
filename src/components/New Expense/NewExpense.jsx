@@ -4,7 +4,7 @@ import './NewExpense.css';
 
 const NewExpense = (props) => {
   const saveExpenseData = (data) => {
-    const userExpenseObj = { ...data, id: Math.random().toString() };
+    const userExpenseObj = { id: Math.random().toString(), ...data };
     props.newexpense(userExpenseObj);
   };
 
